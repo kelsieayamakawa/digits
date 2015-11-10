@@ -22,3 +22,7 @@ body, footer {
 .navbar a.dropdown-toggle {
   color: #A0B0E3;
 }
+
+.form-control {
+  color: #394E96;
+}
