@@ -1,4 +1,5 @@
 <template name="Home">
+  {{#if currentUser}}
   <table class="table table-striped table-bordered">
     <thead>
     <tr>
@@ -33,4 +34,8 @@
     </tr>
     </tbody>
   </table>
+
+  {{else}}
+  Welcome to Digits.  Please login in to continue.
+  {{/if}}
 </template>
