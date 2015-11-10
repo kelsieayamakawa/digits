@@ -26,7 +26,7 @@
                                 //   "single" : require single quotes
                                 //   "double" : require double quotes
     "undef"         : true,     // true: Require all non-global variables to be declared (prevents global leaks)
-    "unused"        : "vars",     // Unused variables:
+    "unused"        : true,     // Unused variables:
                                 //   true     : all variables, last function parameter
                                 //   "vars"   : all variables only
                                 //   "strict" : all variables, all function parameters
@@ -88,59 +88,5 @@
     "wsh"           : false,    // Windows Scripting Host
     "yui"           : false,    // Yahoo User Interface
 
-    // "globals"       : {}
-
-  // Adapted from: https://github.com/raix/Meteor-jshintrc/blob/master/.jshintrc
-  // Custom globals, from http://docs.meteor.com, in the order they appear there
-  "globals"       : {
-    "Meteor"      : false,
-    "DDP"         : false,
-    "Mongo"       : false,
-    "Session"     : false,
-    "Accounts"    : false,
-    "Template"    : false,
-    "Blaze"       : false,
-    "UI"          : false,
-    "Match"       : false,
-    "check"       : false,
-    "Tracker"     : false,
-    "ReactiveVar" : false,
-    "EJSON"       : false,
-    "HTTP"        : false,
-    "Email"       : false,
-    "Assets"      : false,
-    "Handlebars"  : false,
-    "Package"     : false,
-    "App"         : false, //mobile-config.js
-
-    // Meteor internals
-    "DDPServer"   : false,
-    "global"      : false,
-    "Log"         : false,
-    "MongoInternals": false,
-    "process"     : false,
-    "WebApp"      : false,
-    "WebAppInternals": false,
-
-    // globals useful when creating Meteor packages
-    "Npm"         : false,
-    "Tinytest"    : false,
-
-    // common Meteor packages
-    "Random"      : false, // Random
-    "_"           : false, // Underscore
-    "$"           : false, // JQuery
-    "Router"      : false,  // iron-router
-    "RouteController" : false,
-    "AutoForm"    : false,
-    "Meta"        : false,
-    "SimpleSchema": false,
-    "AccountsTemplates": false,
-    "moment"      : false,
-
-    // Define Collections and Globals used in this application.
-    // True because they can be manipulated globally.
-    "Contact"  : true,
-    "Contact"  : true
-  }
+    "globals"       : {}
 }
