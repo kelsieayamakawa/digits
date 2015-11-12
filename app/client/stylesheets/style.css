@@ -26,3 +26,9 @@ body, footer {
 .form-control {
   color: #394E96;
 }
+
+.btn-danger {
+  color: #394E96;
+  background-color: white;
+  border-color: white;
+}
